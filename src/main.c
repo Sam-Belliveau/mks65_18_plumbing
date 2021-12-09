@@ -40,19 +40,19 @@ int main(void)
 
 }
 
-char rot13(char c)
+static char rot13(char c)
 {
     if('a' <= c && c <= 'z')
     {
         c -= 'a' - 13;
-        if(c > 26) c -= 26;
+        if(c >= 26) c -= 26;
         c += 'a';
     }
 
     else if('A' <= c && c <= 'Z')
     {
         c -= 'A' - 13;
-        if(c > 26) c -= 26;
+        if(c >= 26) c -= 26;
         c += 'A';
     }
 
