@@ -1,0 +1,11 @@
+*
+
+!*.*
+!*/
+
+!makefile
+
+obj/
+bin/
+.data/
+.vscode/
